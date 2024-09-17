@@ -1,0 +1,19 @@
+{
+    "name": "casa/eboa.com",
+    "description": "O Carregamento automático de classes através do composer autoload.php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Juliano Barros"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "dompdf/dompdf": "dev-master"
+    }
+}

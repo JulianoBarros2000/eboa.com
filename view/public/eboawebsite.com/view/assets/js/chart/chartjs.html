@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Chart</title>
+        
+    </head>
+    <body>
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="Chart.min.js"></script>
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, { 
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 18, 3, 190, 2, 3],
+        borderWidth: 1,
+        backgroundColor:['#9bf5a2','#7be8fc','#ee9f91','#fce97b','#0984f7','#fa7a30']
+       
+      }]
+    },
+    options: {
+      responsive:true,
+      scales: {
+        x: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
