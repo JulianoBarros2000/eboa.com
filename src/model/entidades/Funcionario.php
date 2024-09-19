@@ -2,8 +2,9 @@
 
 namespace App\model\entidades;
 
+use App\Model\BancoDados;
 use \PDO;
-use \App\Model\BancoDados;
+
 
 class Funcionario
 {
@@ -327,7 +328,7 @@ class Funcionario
                 $_SESSION['data_nasc'] = $data_nasc;
                 $_SESSION['sexo'] = $sexo;
 
-                $base = new BancoDados('funcionario');
+                $base = new BancoDados("funcionario");
                 $base->update("id_funcionario = " . $id_funcionario, ["estado_log" => 1]);
                 return true;
             }

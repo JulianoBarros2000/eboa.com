@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eboa.combbnb bbbbbbbbbbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbbbbbbn n   </title>
+    <title>eboa.com</title>
 </head>
   <?php if (isset($_SESSION['erro_login'])) {
         echo "<div class='erro'>". $_SESSION['erro_login']. "</div>";
